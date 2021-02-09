@@ -2,6 +2,7 @@
  
 <head>
 <title>Dom Play</title>
+<link rel="stylesheet" href="css/index.css" />
     <style>
         /*
         #clickSpans span{
@@ -11,16 +12,26 @@
     </style>
 </head>
 <body>
+    
     <h1>Dom Play</h1>
+    <h2>Hamlet and the 7 pigs</h2>
     <div id="clickSpans">
         <p><span data-actor="hamlet">Hamlet: To be or not to be, that is the qusttion.</span></p>
         <p><span data-actor="skull">Skull: Don't ask me im only a Skull</span></p>
         <p><span data-actor="hamlet">Hamlet: what did you say?</span></p>
         <p><span data-actor="skull">Skull: nothing I'm only a figment of your imagination</span></p>
         <p><span data-actor="hamlet">Hamlet: oh good" I thought I was going crazy!</span></p>    
-        <p><span data-actor="pork">Pig:*snort* Just a couple of pigs in a blanket. *snort*</span></p>    
+        <p><span data-actor="porky">Porky:*snort* Just a couple of pigs in a blanket. *snort*</span></p>    
         <p><span data-actor="skull">Skull: Yeah listen to porky, mr. Hamlet</span></p>
         <p><span data-actor="hamlet">Hamlet:Oh okay, now that I am okay? </span></p>  
+        <p><span data-actor="porky">Porky:Now that Hamlet is fine, it's time for the yearly pig gathering!</span></p>
+        <p><span data-actor="porky">Porky: Pig number 1 is Hamlet, pig number 2 is Skull the undead pig</span></p>
+        <p><span data-actor="skull">Skull: Turns out, I am a pig also (Narrator: This is to clarify that Skull is indeed a pig)</span></p>
+        <p><span data-actor="porky">Porky: Pig number 3 is me the loudest of the pigs. Let me introduce pig number 4: Kevin....</span></p>
+        <p><span data-actor="Kevin">Kevin: Hi everyone, I am Kevin......                                             Bacon </span></p>
+        <p><span data-actor="porky">Porky: Pig number 5 is an martial arts master, Moussier chop</span></p> 
+        <p><span data-actor="chop">Chop: I am french but I know martial arts. Pork Chop!</span></p> 
+        <p><span data-actor="porky">Porky: Pig number 6-7 were eaten so we are the 7 pigs! (Narrator:I got tired of making more pigs.)</span></p> 
     </div>
     <script>
         //spans is var so data is global
@@ -37,7 +48,7 @@
             });    
         }      
             function highlightActor(myActor){
-                alert("hello from highlightActor: " + myActor)
+               // alert("hello from highlightActor: " + myActor)
                 
                for(const mySpan of spans)
                {
